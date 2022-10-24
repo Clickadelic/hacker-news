@@ -1,15 +1,16 @@
 import React from 'react'
+import NavbarBrand from './NavbarBrand'
 
 const Header = () => {
   return (
     <header className="flex justify-between p-3 bg-orange-600">
-        <h1 className="text-black text-3xl">Hacker News</h1>
+        <NavbarBrand brandname="Hacker News" brandurl="/" />
         <nav>
             <ul className="flex mt-1 mr-3">
-                <li><a href="/" className="text-white hover:text-orange-200 p-3">Home</a></li>
-                <li><a href="/" className="text-white hover:text-orange-200 p-3">News</a></li>
-                <li><a href="/" className="text-white hover:text-orange-200 p-3">Forum</a></li>
-                <li><a href="/" className="text-white hover:text-orange-200 p-3">Kontakt</a></li>
+                <li><a href="/" className="text-black hover:text-orange-200 p-3">new</a></li>
+                <li><a href="/" className="text-black hover:text-orange-200 p-3">past</a></li>
+                <li><a href="/" className="text-black hover:text-orange-200 p-3">comments</a></li>
+                <li><a href="/" className="text-black hover:text-orange-200 p-3">ask</a></li>
             </ul>
         </nav>
     </header>
