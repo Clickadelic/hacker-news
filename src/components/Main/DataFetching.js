@@ -10,6 +10,7 @@ const DataFetching = () => {
         .then(response => response.json())
         .then(json => setItems(json))
     }, [resourceType])
+    // Create full postlist
     const fullPostList = items.map(item => {
         return <li>{JSON.stringify(item.body)}</li>
     })
