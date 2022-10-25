@@ -1,11 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React, { useState } from 'react'
 import DataFetching from './DataFetching'
-
 const Main = () => {
-  
+
   return (
-    <main className="container mx-auto">
-      <h1 className="text-2xl font-bold my-5">Data by Resource Type</h1>
+    <main className="container mx-auto bg-slate-100 min-h-screen">
+      
       <DataFetching />
     </main>
   )
